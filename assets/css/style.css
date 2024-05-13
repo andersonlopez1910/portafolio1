@@ -1,0 +1,397 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*esto sirve para que cada vez que se mueva en la pagina se desplace de manera suave*/
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+:root{
+    --header-height: 90px;
+    --bg-body: #fff;
+    --text-body: #000;
+    --color-primary: #197693;
+    --color-text-nav: #FFF;
+    --color-btn: #0000005b;
+    --color-hover-items-list: #48132e9c;
+    --color-header:#fff;
+    --color-logo:var(--color-primary)
+
+}
+
+body.dark{
+    --bg-body: #131212ea;
+    --text-body: #dedddd;
+    --color-primary: #197693;
+    --color-text-nav: #101010;
+    --color-btn: #00000056;
+    --color-hover-items-list: #0505059c;
+    --color-header:#030303; 
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-body);
+}
+.header{
+    box-shadow: 2px 0px 3px 0 #0000005a;
+    width: 120;
+    right: var(--header-height);
+    
+}
+.contenedor{
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    background-color: var(--color-header);
+    
+}
+/*________________menu navegacion____________*/
+.nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+    height: var(--header-height);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.list__menu{
+    list-style: none;
+    font-size: 1.2rem;
+    color: var(--text-body);
+    font-weight: 700;
+    display: flex;
+    gap: 20px;
+}
+.items__list.active{
+    color: var(--color-hover-items-list);
+}
+
+.items__list:hover{
+    color: var(--color-primary);
+}
+.btn{
+    background-color: var(--color-header);
+    color: var(--text-body);
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.con__curriculo{
+    display: flex;
+}
+.a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-body);
+    border: 3px solid var(--color-btn);
+    padding: 14px;
+    transition: border .5s;
+}
+.a:hover{
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+}
+.botones i{
+    color: var(--text-body);
+    height: 100%;
+}
+
+/*___________logo_______*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.img-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    
+    font-size: 40px;
+}
+.comen-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: var(--text-body);
+
+}
+.leng{
+    font-size: 1.1rem;
+    color: var(--text-body);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+/*_________________________contenido caja_____________________*/
+.main{
+    padding-top: var(--header-height);
+    color: var(--text-body);
+}
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: var(--text-body);
+    transition: color .3s;
+}
+a:hover{
+    color: var(--color-primary);
+}
+
+/*_______________hero______________________*/
+.hero{
+    background: linear-gradient(#308cbeb1, #ce8622 120%);
+    width: 100%;
+
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.hero_name{
+    color: var(--color-header);
+    font-size: 3rem;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cont_coment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__description{
+    margin: 0.9px;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.2em;
+    background-color: #0000002c;
+    width: 370px;
+    border-radius: 10px;
+
+}
+.social{
+    list-style: none;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0 30px;
+    font-size: 1.7rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.social__item i{
+    color: var(--text-body);
+    transition: transform 0.3s;
+}
+.social__item i:hover {
+    transform: scale(1.7);
+    color: var(--color-header);
+}
+/*__________________________animation saludo mano moviendose*/
+.hero__animation{
+    animation-name: saludo-animacion;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform: 70% 70%;
+    display: inline-block;
+}
+@keyframes saludo-animacion {
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(14deg);
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    30%{
+        transform: rotate(-8deg);
+    }
+    40%{
+        transform: rotate(14deg);
+    }
+    10%{
+        transform: rotate(-4deg);
+    }
+}
+/*---------------------------------------------------------*/
+
+
+
+
+
+@media (max-width: 927px){
+    :root{
+        height: var(--header-height);
+    }
+    .nav{
+        display: flex;
+        font-size: 1.5rem;
+        color: var(--text-body);
+        width: 100%;
+    }
+    .menu{
+        position: fixed;
+        background-color: var(--color-primary);
+        top:0;
+        left: -100%;
+        bottom:0;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        transition: left 0.5s;
+    }
+    .show-menu{
+        left: 0;
+    }
+    .list__menu{
+        color: var(--color-text-nav);
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: center;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .items__list{
+        transition: color .2s;
+    }
+    .items__list_a.active{
+        color: #143f4c;
+    }
+    .items__list:hover{
+        color: var(--color-hover-items-list);
+    }
+    .con__btnclose{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-self: flex-end;
+        padding: 30px;
+    }
+    .btnclose{
+        border-radius: 50%;
+        width: fit-content;
+        left: 80%;
+        padding: 3px;
+        background-color: var(--color-btn);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: var(--color-text-nav);
+        transition: color .3s;
+        transition: background-color .3s;
+    }
+    .btnclose:hover{
+        color: var(--text-body);
+        background-color: #000000a5;
+    }
+    .con__curriculo{
+        display: flex;
+        justify-content: center;
+        height: 50px; 
+    }
+    .a{
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: var(--color-text-nav);
+        font-weight: 700;
+        border: 1px solid   var(--bg-body);
+        border-radius: 10px;  
+        padding: 5px;
+        transition: box-shadow .3s; 
+    }
+    .a:hover{
+        box-shadow: 1px 2px 1px 2px var(--color-btn);
+        background-color: var(--color-text-nav);
+        color: var(--text-body);
+    }
+
+
+    
+}
+@media (max-width: 340px){
+    .list__menu{
+        font-size: 2rem;
+    }
+    
+}
+
+
+@media (min-width:920px){
+    :root{
+        height: var(--header-height);
+    }
+    .btnclose{
+            display: none;
+    }
+    .btnopen{
+        visibility: hidden;
+    }
+    .menu{
+        font-size: 4rem;
+    }
+}
