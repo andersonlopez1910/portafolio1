@@ -43,14 +43,14 @@ body{
 .header{
     box-shadow: 2px 0px 3px 0 #0000005a;
     width: 120;
-    right: var(--header-height);
-    
+    right: var(--header-height);    
 }
 .contenedor{
     margin: 0 auto;
     width: 100%;
     position: fixed;
-    background-color: var(--color-header);
+    background-color: var(--color-header);   
+    z-index: 10; 
     
 }
 /*________________menu navegacion____________*/
@@ -63,6 +63,7 @@ body{
     padding-right: 10px;
     width: 940px;
     height: var(--header-height);
+    z-index: 10;
 }
 .menu{
     display: flex;
@@ -70,7 +71,7 @@ body{
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    z-index: 2;
+
 }
 .list__menu{
     list-style: none;
@@ -245,6 +246,7 @@ a:hover{
     animation-iteration-count: infinite;
     transform: 70% 70%;
     display: inline-block;
+    z-index: 1;
 }
 @keyframes saludo-animacion {
     0%{
@@ -284,13 +286,14 @@ a:hover{
     }
     .menu{
         position: fixed;
+        z-index: 10;
         background-color: var(--color-primary);
         top:0;
         left: -100%;
         bottom:0;
         width: 100%;
         text-align: center;
-        z-index: 3;
+       
 
         display: flex;
         flex-direction: column;
@@ -299,6 +302,7 @@ a:hover{
     }
     .show-menu{
         left: 0;
+        z-index: 1000;
     }
     .list__menu{
         color: var(--color-text-nav);
