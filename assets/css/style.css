@@ -70,6 +70,7 @@ body{
     align-items: center;
     gap: 20px;
     cursor: pointer;
+    z-index: 2;
 }
 .list__menu{
     list-style: none;
