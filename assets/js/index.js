@@ -80,3 +80,20 @@ var typed = new Typed('#typing', {
     showCursor: true,
   cursorChar: '_',
   });
+
+  //_______________scrollReveal______________
+
+  const sr = new ScrollReveal({
+    origin: 'top',
+    distance: '1024px',
+    duration: 2500,
+    reset: true
+  })
+
+  sr.reveal('.con__img',{origin:'top', distance: '100px'})
+  sr.reveal('.hero__title',{origin:'top', distance: '100px'})
+  sr.reveal('.cont_coment',{origin:'top', distance: '100px'})
+  sr.reveal('.social',{origin:'top', distance: '100px'})
+
+
+  
