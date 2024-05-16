@@ -320,7 +320,7 @@ a:hover{
    
 }
 .projects__card{
-    background-color: #3a34345a;
+    background-color: #565e5e4f;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -430,7 +430,7 @@ a:hover{
     padding: 10px;
 }
 .input{
-    width: 100%;
+    width: 94%;
     height: 40px;
     border-radius: 0px 5px 5px 0;
     border: none; 
@@ -441,7 +441,7 @@ a:hover{
     height: 150px;
 }
 .textarea{
-    width: 100%;
+    width: 94%;
     height: 95%;
     background-color: #ffffffdb;
     border-radius: 0 20px 20px 0;
@@ -461,6 +461,12 @@ a:hover{
     cursor: pointer;
     cursor: url(../img/cursorpointer.png), auto;
     margin-top: 20px;
+    transition: color, background-color .5s;
+
+}
+.submit:hover{
+    background-color: #e96e60;
+    color: var(--text-body);
 }
 .contentainer__redes{
     position: relative;
@@ -479,6 +485,15 @@ a:hover{
     font-weight: 700;
     display: inline-block;
     margin-top: 30px;
+}
+.content_red{
+    width: 120px;
+    height: 30px;
+    transition: color, font-size .3s;
+}
+.content_red a:hover{
+    color: #e96e60;
+    font-size: 1.4rem;
 }
 
 @keyframes saludo-animacion {
