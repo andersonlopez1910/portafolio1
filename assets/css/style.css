@@ -487,13 +487,11 @@ a:hover{
     margin-top: 30px;
 }
 .content_red{
-    width: 120px;
-    height: 30px;
-    transition: color, font-size .3s;
+    font-size: 1.5rem;
 }
+
 .content_red a:hover{
     color: #e96e60;
-    font-size: 1.4rem;
 }
 /*miestras que se hace la version de ingles*/
 .leng{
