@@ -95,5 +95,9 @@ var typed = new Typed('#typing', {
   sr.reveal('.cont_coment',{origin:'top', distance: '100px'})
   sr.reveal('.social',{origin:'top', distance: '100px'})
 
+  //seccion contacto
+
+  const documento = document.getElementById('campo');
+
 
   

@@ -382,9 +382,104 @@ a:hover{
     color: var(--color-primary);
     font-weight: bold;
 }
+/*seccion de contacto*/
+.contact{
+    width: 940px;
+    margin: 0 auto;
+   }
 
-
-
+.content__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.contact__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #565e5e4f;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+.laber{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+}  
+.input_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e96e60;
+    border-radius: 20px;
+}
+.input_name i {
+    font-size: 1.7rem;
+    color: var(--text-body);
+    padding: 10px;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 0px 5px 5px 0;
+    border: none; 
+    background-color: #ffffffdb;
+    border-radius: 0 20px 20px 0;
+}
+.texareass{
+    height: 150px;
+}
+.textarea{
+    width: 100%;
+    height: 95%;
+    background-color: #ffffffdb;
+    border-radius: 0 20px 20px 0;
+    border: none;
+}
+.name{
+    padding-top: 20px;
+}
+.submit{
+    border: none;
+    width: fit-content;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    align-self: center;
+    color: #e96e60;
+    cursor: pointer;
+    cursor: url(../img/cursorpointer.png), auto;
+    margin-top: 20px;
+}
+.contentainer__redes{
+    position: relative;
+    display: flex;
+    align-self: center;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+.derechos{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    display: inline-block;
+}
+.encabezado{
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+}
 
 @keyframes saludo-animacion {
     0%{
@@ -550,10 +645,98 @@ a:hover{
     .skills__subtitle{
         margin: 0;
     }
+    ..contact{
+    width: 940px;
+    margin: 0 auto;
+   }
+
+.content__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.contact__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #565e5e4f;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+.laber{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+}  
+.input_name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e96e60;
+    border-radius: 20px;
+}
+.input_name i {
+    font-size: 1.7rem;
+    color: var(--text-body);
+    padding: 10px;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 0px 5px 5px 0;
+    border: none; 
+    background-color: #ffffffdb;
+    border-radius: 0 20px 20px 0;
+}
+.texareass{
+    height: 150px;
+}
+.textarea{
+    width: 100%;
+    height: 95%;
+    background-color: #ffffffdb;
+    border-radius: 0 20px 20px 0;
+    border: none;
+}
+.name{
+    padding-top: 20px;
+}
+.submit{
+    border: none;
+    width: fit-content;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    align-self: center;
+    color: #e96e60;
+    cursor: pointer;
+    cursor: url(../img/cursorpointer.png), auto;
+    margin-top: 20px;
+}
+.contentainer__redes{
+    position: relative;
+    display: flex;
+    align-self: center;
+    gap: 30px;
+    font-size: 1.3rem;
+}
 
     /*seccion de proyectos*/
-   
-    
+    .contact{
+        width: 100%;
+        margin: 0 auto;
+     }   
 
 }
 
