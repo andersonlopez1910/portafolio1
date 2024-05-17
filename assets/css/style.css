@@ -17,7 +17,7 @@ html{
     --header-height: 90px;
     --bg-body: #fff;
     --text-body: #000;
-    --color-primary: #197693;
+    --color-primary: #3cc8d5;
     --color-text-nav: #FFF;
     --color-btn: #0000005b;
     --color-hover-items-list: #48132e9c;
@@ -29,7 +29,7 @@ html{
 body.dark{
     --bg-body: #131212ea;
     --text-body: #dedddd;
-    --color-primary: #197693;
+    --color-primary: #3cc8d5;
     --color-text-nav: #101010;
     --color-btn: #00000056;
     --color-hover-items-list: #0505059c;
@@ -352,6 +352,7 @@ a:hover{
 
 .proyects__container{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
     z-index: 1;
@@ -379,7 +380,7 @@ a:hover{
 }
 .project__title{
     margin: 0;
-    color: var(--color-primary);
+    color: var(--text-body);/*..............................................................*/
     font-weight: bold;
 }
 /*seccion de contacto*/
@@ -429,19 +430,12 @@ a:hover{
     color: var(--text-body);
     padding: 10px;
 }
-.input{
-    width: 94%;
-    height: 40px;
-    border-radius: 0px 5px 5px 0;
-    border: none; 
-    background-color: #ffffffdb;
-    border-radius: 0 20px 20px 0;
-}
 .texareass{
     height: 150px;
 }
 .textarea{
     width: 94%;
+    margin-top: 5px;
     height: 95%;
     background-color: #ffffffdb;
     border-radius: 0 20px 20px 0;
@@ -487,7 +481,7 @@ a:hover{
     margin-top: 30px;
 }
 .content_red{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .content_red a:hover{
@@ -497,6 +491,25 @@ a:hover{
 .leng{
     visibility: hidden;
 }
+input[type="text"], input[type="email"], textarea {
+    padding: 5px;
+    margin-bottom: 2px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 93%;
+    border-radius: 0 20px 20px 0;
+    transition: border-color 0.3s ease;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+
 
 @keyframes saludo-animacion {
     0%{
@@ -662,98 +675,124 @@ a:hover{
     .skills__subtitle{
         margin: 0;
     }
-    ..contact{
+    .contact{
     width: 940px;
     margin: 0 auto;
    }
 
-.content__contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-}
-.contact__form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color: #565e5e4f;
-    border-radius: 20px;
-    padding-bottom: 50px;
-}
-.laber{
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-.element{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    gap: 10px;
-}  
-.input_name{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #e96e60;
-    border-radius: 20px;
-}
-.input_name i {
-    font-size: 1.7rem;
-    color: var(--text-body);
-    padding: 10px;
-}
-.input{
-    width: 100%;
-    height: 40px;
-    border-radius: 0px 5px 5px 0;
-    border: none; 
-    background-color: #ffffffdb;
-    border-radius: 0 20px 20px 0;
-}
-.texareass{
-    height: 150px;
-}
-.textarea{
-    width: 100%;
-    height: 95%;
-    background-color: #ffffffdb;
-    border-radius: 0 20px 20px 0;
-    border: none;
-}
-.name{
-    padding-top: 20px;
-}
-.submit{
-    border: none;
-    width: fit-content;
-    padding: 15px;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    align-self: center;
-    color: #e96e60;
-    cursor: pointer;
-    cursor: url(../img/cursorpointer.png), auto;
-    margin-top: 20px;
-}
-.contentainer__redes{
-    position: relative;
-    display: flex;
-    align-self: center;
-    gap: 30px;
-    font-size: 1.3rem;
-}
-
-    /*seccion de proyectos*/
-    .contact{
+    .content__contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    .contact__form{
         width: 100%;
-        margin: 0 auto;
-     }   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: #565e5e4f;
+        border-radius: 20px;
+        padding-bottom: 50px;
+    }
+    .laber{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 10px;
+    }  
+    .input_name{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #e96e60;
+        border-radius: 20px;
+    }
+    .input_name i {
+        font-size: 1.7rem;
+        color: var(--text-body);
+        padding: 10px;
+    }
+    .input{
+        width: 100%;
+        height: 40px;
+        border-radius: 0px 5px 5px 0;
+        border: none; 
+        background-color: #ffffffdb;
+        border-radius: 0 20px 20px 0;
+    }
+    .texareass{
+        height: 150px;
+    }
+    .textarea{
+        width: 100%;
+        height: 95%;
+        background-color: #ffffffdb;
+        border-radius: 0 20px 20px 0;
+        border: none;
+    }
+    .name{
+        padding-top: 20px;
+    }
+    .submit{
+        border: none;
+        width: fit-content;
+        padding: 15px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        align-self: center;
+        color: #e96e60;
+        cursor: pointer;
+        cursor: url(../img/cursorpointer.png), auto;
+        margin-top: 5px;
+    }
+    .contentainer__redes{
+        position: relative;
+        display: flex;
+        align-self: center;
+        gap: 10px;
+    }
+    .content_red{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+        /*seccion de proyectos*/
+    .contact{
+            width: 100%;
+            margin: 0 auto;
+    }
+    .projects{
+            width: 100%;
+            margin: 0 auto;
+        
+    }
+    .encabezado{
+        text-align: center;
+        font-weight: 200;
+    }
+    input[type="text"], input[type="email"], textarea {
+        padding: 5px;
+        margin-bottom: 2px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        outline: none;
+        width: 83%;
+        border-radius: 0 20px 20px 0;
+        transition: border-color 0.3s ease;
+        color: var(--color-primary);
+        font-size: 1.3rem;
+    }
 
 }
 
