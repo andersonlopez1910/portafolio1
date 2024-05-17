@@ -408,6 +408,7 @@ a:hover{
 .laber{
     font-size: 1.2rem;
     font-weight: 700;
+    cursor: url(../img/cursorpointer.png), auto;
 }
 .element{
     display: flex;

@@ -100,4 +100,3 @@ var typed = new Typed('#typing', {
   const documento = document.getElementById('campo');
 
 
-  
